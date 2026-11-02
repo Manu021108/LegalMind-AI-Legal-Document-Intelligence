@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Document Analyzer — AI-Powered Legal Intelligence</title>
+    <meta name="description" content="RAG-based multi-document legal intelligence system. Upload legal documents, ask questions, and get grounded answers with source citations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div id="app" class="app-layout">
+        <!-- ═══ LEFT SIDEBAR ═══ -->
+        <aside id="sidebar-left" class="sidebar sidebar-left">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Legal Document Analyzer</h1>
+                        <span class="logo-tagline">AI Document Intelligence</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sessions Section -->
+            <div class="sidebar-section">
+                <div class="section-header">
+                    <span class="section-title">Conversations</span>
+                    <button id="btn-new-session" class="btn-icon" title="New Chat">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                    </button>
+                </div>
+                <div id="sessions-list" class="sessions-list">
+                    <div class="empty-state-small">
+                        <p>No conversations yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents Section -->
+            <div class="sidebar-section">
+                <div class="section-header">
+                    <span class="section-title">Documents</span>
+                    <span id="doc-count-badge" class="badge">0</span>
+                </div>
+                <div id="documents-sidebar-list" class="documents-list">
+                    <div class="empty-state-small">
+                        <p>No documents uploaded</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Status -->
+            <div class="sidebar-footer">
+                <div id="system-status" class="system-status">
+                    <div class="status-dot" id="status-dot"></div>
+                    <span id="status-text">Checking system...</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ═══ MAIN CONTENT ═══ -->
+        <main class="main-content">
+            <!-- Setup Alert Banner -->
+            <div id="setup-banner" class="setup-banner hidden">
+                <div class="banner-content">
+                    <div class="banner-icon">⚠️</div>
+                    <div class="banner-text">
+                        <strong>Setup Required</strong>
+                        <ul id="setup-issues"></ul>
+                    </div>
+                    <button id="btn-dismiss-banner" class="btn-icon banner-close" title="Dismiss">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="16" height="16"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Header -->
+            <header class="chat-header">
+                <button id="btn-toggle-sidebar" class="btn-icon mobile-only" title="Toggle Sidebar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+                <div class="chat-header-info">
+                    <h2 id="chat-title">Legal Document Analyzer</h2>
+                    <span id="chat-subtitle" class="chat-subtitle">Upload documents and start asking questions</span>
+                </div>
+                <div class="chat-header-actions">
+                    <button id="btn-export-chat" class="btn-icon" title="Export Chat as Markdown" style="display:none;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </button>
+                    <div class="mode-toggle" id="mode-toggle" title="Response Mode">
+                        <button class="mode-btn active" data-mode="strict">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            Strict
+                        </button>
+                        <button class="mode-btn" data-mode="hybrid">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            Hybrid
+                        </button>
+                    </div>
+                    <button id="btn-toggle-panel" class="btn-icon" title="Toggle Documents Panel">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Chat Messages Area -->
+            <div id="chat-messages" class="chat-messages">
+                <div id="welcome-screen" class="welcome-screen">
+                    <div class="welcome-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h2>Legal Document Intelligence</h2>
+                    <p>Upload your legal documents and ask questions to get precise, source-cited answers.</p>
+                    <div class="welcome-features">
+                        <div class="feature-card">
+                            <div class="feature-icon">📄</div>
+                            <h3>Multi-Document</h3>
+                            <p>Query across multiple documents simultaneously</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔍</div>
+                            <h3>Semantic Search</h3>
+                            <p>AI-powered understanding beyond keywords</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📌</div>
+                            <h3>Source Citations</h3>
+                            <p>Every answer traced back to the source</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💬</div>
+                            <h3>Memory</h3>
+                            <p>Conversational context across questions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator hidden">
+                <div class="typing-avatar">AI</div>
+                <div class="typing-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span class="typing-text">Analyzing documents...</span>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="chat-input-container">
+                <div class="doc-filter-bar" id="doc-filter-bar">
+                    <span class="filter-label">Querying:</span>
+                    <div id="doc-filter-chips" class="doc-filter-chips">
+                        <span class="filter-chip active" data-doc-id="all">All Documents</span>
+                    </div>
+                </div>
+                <div class="chat-input-wrapper">
+                    <textarea id="chat-input" class="chat-input" placeholder="Ask a question about your legal documents..." rows="1"></textarea>
+                    <button id="btn-send" class="btn-send" title="Send Message" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span id="provider-badge" class="provider-badge">LLM: Checking...</span>
+                    <span class="input-hint">Press Enter to send, Shift+Enter for new line</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- ═══ RIGHT PANEL ═══ -->
+        <aside id="sidebar-right" class="sidebar sidebar-right">
+            <div class="sidebar-header">
+                <h2>Documents</h2>
+                <button id="btn-close-panel" class="btn-icon" title="Close Panel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+
+            <!-- Upload Zone -->
+            <div id="upload-zone" class="upload-zone">
+                <input type="file" id="file-input" multiple accept=".pdf,.docx,.txt" hidden>
+                <div class="upload-content">
+                    <div class="upload-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="17 8 12 3 7 8"/>
+                            <line x1="12" y1="3" x2="12" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="upload-text">Drag & drop files here</p>
+                    <p class="upload-subtext">or click to browse — PDF, DOCX, TXT</p>
+                </div>
+                <div id="upload-progress" class="upload-progress hidden">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span id="progress-text" class="progress-text">Processing...</span>
+                </div>
+            </div>
+
+            <!-- Document List -->
+            <div class="sidebar-section">
+                <div class="section-header">
+                    <span class="section-title">Uploaded Files</span>
+                </div>
+                <div id="documents-panel-list" class="documents-list panel-list">
+                    <div class="empty-state-small">
+                        <p>No documents uploaded yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="sidebar-section">
+                <div class="section-header">
+                    <span class="section-title">Statistics</span>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-docs">0</span>
+                        <span class="stat-label">Documents</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-chunks">0</span>
+                        <span class="stat-label">Chunks</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-sessions">0</span>
+                        <span class="stat-label">Sessions</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="confirm-modal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <h3 id="modal-title">Confirm Action</h3>
+            <p id="modal-message">Are you sure?</p>
+            <div class="modal-actions">
+                <button id="modal-cancel" class="btn btn-secondary">Cancel</button>
+                <button id="modal-confirm" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Preview Modal -->
+    <div id="preview-modal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closePreviewModal()"></div>
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="preview-title">Document Preview</h3>
+                <button class="btn-icon" onclick="closePreviewModal()" title="Close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div id="preview-body" class="modal-body-scroll">
+                <p>Loading preview...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/sessions.js"></script>
+    <script src="/static/js/documents.js"></script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
