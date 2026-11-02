@@ -1,0 +1,119 @@
+SOFTWARE AS A SERVICE (SaaS) LICENSE AGREEMENT
+
+Agreement No.: CV-SLA-2025-00847
+Effective Date: March 1, 2025
+
+This SaaS License Agreement is entered into by and between:
+
+LICENSOR: CloudVault Technologies Inc., a Delaware corporation, 500 Innovation Drive, Suite 300, San Jose, CA 95134, United States ("CloudVault" or "Provider");
+
+LICENSEE: Meridian Financial Services Ltd., registered under Companies Act 2013, 15th Floor, World Trade Centre, Cuffe Parade, Mumbai 400005, India ("Client").
+
+1. DEFINITIONS
+
+1.1 "Authorized Users" means Client's employees and contractors authorized to access the Service, subject to limits in the Order Form.
+
+1.2 "Client Data" means all electronic data submitted by the Client to the Service, including financial records, customer information, and analytics outputs.
+
+1.3 "Service" means the CloudVault Enterprise Data Management Platform — a cloud-based SaaS for secure data storage, analytics, regulatory compliance, and workflow automation.
+
+1.4 "Subscription Period" means the authorized access period specified in the Order Form.
+
+2. GRANT OF LICENSE
+
+2.1 License Grant: CloudVault grants the Client a non-exclusive, non-transferable, limited right to access and use the Service during the Subscription Period for internal business purposes only.
+
+2.2 Restrictions: The Client shall not:
+    (a) Reverse engineer, decompile, or disassemble the Service;
+    (b) Sublicense, sell, or redistribute the Service;
+    (c) Use the Service to build a competitive product;
+    (d) Exceed API rate limits or storage quotas in the Order Form.
+
+3. SUBSCRIPTION FEES AND PAYMENT
+
+3.1 Pricing:
+    (a) Enterprise Plan: USD 48,000/year (up to 100 users)
+    (b) Additional Users: USD 35/user/month
+    (c) Premium Support: USD 12,000/year
+    (d) Advanced Analytics Module: USD 18,000/year
+    (e) Regulatory Compliance Module (RBI/SEBI): USD 24,000/year
+
+3.2 Payment Terms: Invoices payable within 30 days. Late payments bear 1.5% monthly interest.
+
+3.3 Fee Escalation: Up to 8% annual increase upon renewal with 60 days notice.
+
+3.4 Taxes: All fees exclusive of GST, withholding taxes, and governmental charges.
+
+4. DATA OWNERSHIP AND PRIVACY
+
+4.1 Client Data Ownership: The Client retains all rights to Client Data. CloudVault acquires only limited processing rights.
+
+4.2 Compliance: CloudVault shall comply with:
+    (a) Information Technology Act, 2000 (India);
+    (b) Digital Personal Data Protection Act, 2023 (India);
+    (c) GDPR (EU) 2016/679, to the extent applicable.
+
+4.3 Data Location: Primary storage in Mumbai, India; disaster recovery in Singapore.
+
+4.4 Data Backup: Daily automated backups with 90-day retention. Exports available in CSV, JSON, XML.
+
+4.5 Post-Termination: Data return or secure deletion within 60 days of termination.
+
+5. SERVICE LEVELS AND SUPPORT
+
+5.1 Uptime Commitment: 99.95% monthly uptime guaranteed.
+
+5.2 Service Credits:
+    (a) 99.0%-99.94%: 10% monthly credit
+    (b) 95.0%-98.99%: 25% monthly credit
+    (c) Below 95.0%: 50% monthly credit
+
+5.3 Support Tiers:
+    (a) Standard: Email support, 9AM-6PM IST, 8-hour response for critical issues.
+    (b) Premium: 24/7 email and phone, 2-hour response, dedicated account manager.
+
+6. SECURITY
+
+6.1 Security Measures:
+    (a) AES-256 encryption at rest, TLS 1.3 in transit;
+    (b) Multi-factor authentication (MFA) and RBAC;
+    (c) SOC 2 Type II and ISO 27001:2022 certified;
+    (d) Regular penetration testing and vulnerability assessments.
+
+6.2 Breach Notification: Within 72 hours of confirmed security incidents.
+
+6.3 Audit Rights: Annual third-party audit at Client's expense with 30 days notice.
+
+7. LIMITATION OF LIABILITY
+
+7.1 Liability Cap: Neither party's aggregate liability exceeds total fees paid in the 12 months preceding the event.
+
+7.2 Exclusion: No liability for indirect, incidental, special, or consequential damages.
+
+7.3 Data Breach Exception: CloudVault's liability for breaches due to gross negligence capped at 2x annual fees.
+
+8. TERM AND TERMINATION
+
+8.1 Initial Term: Three (3) years from Effective Date.
+
+8.2 Renewal: Auto-renews for 1-year periods unless 90 days written notice of non-renewal.
+
+8.3 Termination for Breach: 30-day cure period after written notice.
+
+8.4 Effect: Access ceases immediately upon termination.
+
+9. GOVERNING LAW
+
+9.1 This Agreement is governed by Delaware law.
+
+9.2 Disputes resolved via ICC arbitration in Singapore with three arbitrators.
+
+IN WITNESS WHEREOF, executed as of the Effective Date.
+
+CLOUDVAULT TECHNOLOGIES INC.
+Name: David Chen, CEO
+Date: March 1, 2025
+
+MERIDIAN FINANCIAL SERVICES LTD.
+Name: Anand Krishnamurthy, CIO
+Date: March 1, 2025

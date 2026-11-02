@@ -1,0 +1,141 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into as of January 15, 2025, by and between TechCorp Solutions Private Limited, a company incorporated under the Companies Act, 2013 (hereinafter referred to as the "Company"), having its registered office at 4th Floor, Tower B, Cyber City, Gurugram, Haryana 122002, India, and Mr. Rajesh Kumar Sharma (hereinafter referred to as the "Employee"), residing at Flat 12B, Green Valley Apartments, Sector 56, Noida, Uttar Pradesh 201301.
+
+RECITALS
+
+WHEREAS, the Company is engaged in the business of software development, cloud computing solutions, and technology consulting services; and
+
+WHEREAS, the Employee possesses skills, knowledge, and experience that the Company desires to engage; and
+
+WHEREAS, the Company wishes to employ the Employee and the Employee wishes to accept such employment upon the terms and conditions set forth herein.
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements herein contained, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:
+
+ARTICLE 1 — POSITION AND DUTIES
+
+1.1 Position: The Employee shall serve as Senior Software Architect, reporting directly to the Chief Technology Officer (CTO) of the Company.
+
+1.2 Duties: The Employee shall perform the following duties:
+    (a) Design and architect scalable software solutions for enterprise clients;
+    (b) Lead technical teams consisting of 8-12 software engineers;
+    (c) Conduct code reviews, technical audits, and performance assessments;
+    (d) Collaborate with product management and business stakeholders;
+    (e) Evaluate and recommend emerging technologies for adoption;
+    (f) Such other duties as may be reasonably assigned by the CTO from time to time.
+
+1.3 Devotion of Time: The Employee shall devote substantially all of their business time, attention, and best efforts to the performance of their duties hereunder. The Employee shall not, during the term of this Agreement, engage in any other employment or consulting activity without the prior written consent of the Company.
+
+ARTICLE 2 — TERM AND PROBATION
+
+2.1 Commencement Date: The employment shall commence on February 1, 2025 ("Commencement Date").
+
+2.2 Probation Period: The Employee shall be on probation for a period of six (6) months from the Commencement Date. During the probation period, either party may terminate this Agreement by providing fifteen (15) days' written notice to the other party.
+
+2.3 Confirmation: Upon satisfactory completion of the probation period, the Employee shall be confirmed in writing. The Company reserves the right to extend the probation period by up to three (3) additional months if necessary.
+
+2.4 Term: Subject to the provisions of Article 7 (Termination), the employment shall continue on an at-will basis following confirmation.
+
+ARTICLE 3 — COMPENSATION AND BENEFITS
+
+3.1 Base Salary: The Company shall pay the Employee a gross annual salary of INR 42,00,000 (Indian Rupees Forty-Two Lakhs Only), payable in twelve (12) equal monthly installments on or before the last working day of each calendar month, subject to applicable tax deductions and withholdings.
+
+3.2 Annual Bonus: The Employee shall be eligible for a performance-based annual bonus of up to 20% of the base salary, contingent upon the achievement of individual and company performance targets as determined by the Company.
+
+3.3 Employee Stock Options (ESOPs): Subject to board approval, the Employee shall be granted stock options equivalent to 0.05% of the Company's fully diluted share capital, vesting over a period of four (4) years with a one-year cliff. The terms and conditions of the ESOPs shall be governed by the Company's ESOP Plan 2024.
+
+3.4 Benefits: The Employee shall be entitled to the following benefits:
+    (a) Group Health Insurance coverage for the Employee, spouse, and up to two dependent children with a sum insured of INR 10,00,000;
+    (b) Provident Fund contributions as mandated under the Employees' Provident Funds and Miscellaneous Provisions Act, 1952;
+    (c) Gratuity as per the Payment of Gratuity Act, 1972;
+    (d) Twenty-four (24) days of paid leave per annum, comprising 12 earned leaves, 6 casual leaves, and 6 sick leaves;
+    (e) Company-provided laptop and necessary work equipment;
+    (f) Internet reimbursement of up to INR 2,000 per month for remote work.
+
+ARTICLE 4 — CONFIDENTIALITY AND INTELLECTUAL PROPERTY
+
+4.1 Confidential Information: The Employee acknowledges that during the course of employment, they shall have access to and become acquainted with proprietary and confidential information belonging to the Company, including but not limited to:
+    (a) Trade secrets, algorithms, source code, and technical specifications;
+    (b) Client lists, client data, and business strategies;
+    (c) Financial information, pricing models, and revenue data;
+    (d) Product roadmaps, marketing plans, and research data;
+    (e) Employee data, compensation structures, and organizational information.
+
+4.2 Non-Disclosure Obligation: The Employee shall not, during the term of employment or at any time thereafter, directly or indirectly, disclose, publish, or otherwise reveal any Confidential Information to any third party except as required in the performance of their duties or as authorized in writing by the Company.
+
+4.3 Intellectual Property Assignment: All inventions, innovations, improvements, developments, methods, designs, analyses, drawings, reports, and all similar or related information (whether or not patentable) that relate to the Company's actual or anticipated business, research and development, or existing or future products or services, and that are conceived, developed, or made by the Employee during the term of employment ("Work Product"), shall be the sole and exclusive property of the Company.
+
+4.4 Return of Materials: Upon termination of employment for any reason, the Employee shall promptly return to the Company all documents, data, equipment, and any other materials (in whatever form) containing or relating to Confidential Information or Work Product.
+
+ARTICLE 5 — NON-COMPETE AND NON-SOLICITATION
+
+5.1 Non-Compete: For a period of twelve (12) months following the termination of employment, the Employee shall not, directly or indirectly, engage in, own, manage, operate, control, be employed by, or participate in any business that competes with the Company's business within the geographic territory where the Company operates.
+
+5.2 Non-Solicitation of Employees: For a period of eighteen (18) months following the termination of employment, the Employee shall not, directly or indirectly, solicit, recruit, or induce any employee of the Company to leave the employment of the Company or to accept employment with a competitor.
+
+5.3 Non-Solicitation of Clients: For a period of twelve (12) months following the termination of employment, the Employee shall not, directly or indirectly, solicit or attempt to solicit any client or customer of the Company with whom the Employee had material contact during the last twelve (12) months of employment.
+
+5.4 Enforceability: The Employee acknowledges that the restrictions set forth in this Article 5 are reasonable in scope, duration, and geographic area, and are necessary to protect the Company's legitimate business interests.
+
+ARTICLE 6 — DISPUTE RESOLUTION
+
+6.1 Governing Law: This Agreement shall be governed by and construed in accordance with the laws of India.
+
+6.2 Arbitration: Any dispute, controversy, or claim arising out of or relating to this Agreement shall be resolved by binding arbitration in accordance with the Arbitration and Conciliation Act, 1996, as amended. The arbitration shall be conducted by a sole arbitrator mutually appointed by the parties, or failing agreement within thirty (30) days, appointed by the Delhi High Court. The seat of arbitration shall be New Delhi, India.
+
+6.3 Jurisdiction: Subject to the arbitration clause above, the courts of New Delhi shall have exclusive jurisdiction over any matters arising out of this Agreement.
+
+ARTICLE 7 — TERMINATION
+
+7.1 Termination by Company:
+    (a) For Cause: The Company may terminate this Agreement immediately and without notice for Cause. "Cause" shall mean: (i) material breach of this Agreement; (ii) commission of fraud, theft, or dishonesty; (iii) conviction of a criminal offense; (iv) willful misconduct or gross negligence; (v) repeated failure to perform duties after written warning.
+    (b) Without Cause: After the probation period, the Company may terminate this Agreement by providing ninety (90) days' written notice or payment of three (3) months' salary in lieu of notice.
+
+7.2 Termination by Employee: After the probation period, the Employee may terminate this Agreement by providing ninety (90) days' written notice to the Company.
+
+7.3 Termination Benefits: Upon termination (other than for Cause), the Employee shall be entitled to:
+    (a) Payment of accrued but unpaid salary through the termination date;
+    (b) Payment for accrued but unused paid leave;
+    (c) Gratuity as applicable under law;
+    (d) Any vested but unexercised stock options as per the ESOP Plan.
+
+7.4 Garden Leave: The Company reserves the right to place the Employee on garden leave during the notice period, during which the Employee shall remain bound by all obligations under this Agreement and shall be available for transition duties as required.
+
+ARTICLE 8 — GENERAL PROVISIONS
+
+8.1 Entire Agreement: This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions.
+
+8.2 Amendments: No modification, amendment, or waiver of any provision of this Agreement shall be effective unless in writing and signed by both parties.
+
+8.3 Severability: If any provision of this Agreement is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+8.4 Notices: All notices required or permitted under this Agreement shall be in writing and delivered by hand, registered post, or email to the addresses specified above.
+
+8.5 Waiver: The failure of either party to enforce any provision of this Agreement shall not be construed as a waiver of such provision or the right to enforce it at a later time.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+FOR TECHCORP SOLUTIONS PRIVATE LIMITED
+
+_______________________________
+Name: Ms. Priya Mehta
+Title: Chief Human Resources Officer
+Date: January 15, 2025
+
+EMPLOYEE
+
+_______________________________
+Name: Mr. Rajesh Kumar Sharma
+Date: January 15, 2025
+
+WITNESS 1
+
+_______________________________
+Name: Mr. Anil Verma
+Designation: Legal Counsel, TechCorp Solutions
+
+WITNESS 2
+
+_______________________________
+Name: Ms. Deepika Singh
+Designation: HR Manager, TechCorp Solutions

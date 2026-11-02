@@ -1,0 +1,120 @@
+NON-DISCLOSURE AGREEMENT (NDA)
+
+This Non-Disclosure Agreement ("Agreement") is made effective as of April 10, 2025 ("Effective Date"), by and between:
+
+DISCLOSING PARTY: Quantum Innovations Pvt. Ltd., CIN: U72200KA2019PTC125678, registered office at 42 MG Road, Brigade Gateway, Bengaluru, Karnataka 560001 ("Quantum" or "Discloser");
+
+RECEIVING PARTY: NexGen Systems LLC, a limited liability company organized under the laws of California, with offices at 1200 Market Street, Suite 400, San Francisco, CA 94103, United States ("NexGen" or "Recipient").
+
+WHEREAS, the Parties wish to explore a potential business collaboration involving the integration of Quantum's proprietary AI/ML algorithms into NexGen's autonomous vehicle navigation platform ("Purpose"); and
+
+WHEREAS, in connection with the Purpose, Quantum may disclose certain confidential and proprietary information to NexGen;
+
+NOW, THEREFORE, the Parties agree as follows:
+
+1. DEFINITION OF CONFIDENTIAL INFORMATION
+
+1.1 "Confidential Information" means any and all non-public, proprietary, or confidential information disclosed by the Discloser to the Recipient, whether orally, in writing, electronically, or by inspection, including but not limited to:
+
+    (a) Technical Information: source code, object code, algorithms, neural network architectures, model weights, training datasets, API specifications, system designs, hardware configurations, and research data;
+
+    (b) Business Information: business plans, financial projections, revenue models, pricing strategies, customer lists, supplier agreements, merger and acquisition plans, and partnership discussions;
+
+    (c) Intellectual Property: patents (pending and granted), patent applications, trade secrets, inventions, copyrights, trademarks, and design rights;
+
+    (d) Personnel Information: employee lists, compensation data, organizational charts, hiring plans, and performance evaluations;
+
+    (e) Any information marked as "Confidential," "Proprietary," or with a similar designation;
+
+    (f) Information that, by its nature or the circumstances of its disclosure, would reasonably be understood to be confidential.
+
+1.2 Confidential Information shall NOT include information that:
+    (a) Is or becomes publicly available through no fault of the Recipient;
+    (b) Was known to the Recipient prior to disclosure, as evidenced by written records;
+    (c) Is independently developed by the Recipient without use of or reference to the Confidential Information;
+    (d) Is received from a third party who is not bound by confidentiality obligations;
+    (e) Is required to be disclosed by law, regulation, or court order, provided the Recipient gives prompt written notice to the Discloser to allow the Discloser to seek protective relief.
+
+2. OBLIGATIONS OF THE RECIPIENT
+
+2.1 Non-Disclosure: The Recipient shall not disclose Confidential Information to any third party without the prior written consent of the Discloser.
+
+2.2 Limited Use: The Recipient shall use Confidential Information solely for the Purpose and for no other purpose whatsoever.
+
+2.3 Standard of Care: The Recipient shall protect Confidential Information using at least the same degree of care it uses to protect its own confidential information, but in no event less than a reasonable standard of care.
+
+2.4 Authorized Personnel: The Recipient may disclose Confidential Information only to its employees, contractors, and advisors who:
+    (a) Have a legitimate need to know for the Purpose;
+    (b) Are bound by written confidentiality obligations no less restrictive than this Agreement;
+    (c) Have been informed of the confidential nature of the information.
+
+2.5 Security Measures: The Recipient shall implement appropriate technical and organizational security measures to prevent unauthorized access, disclosure, or loss of Confidential Information, including:
+    (a) Encryption of Confidential Information in storage and transit;
+    (b) Access controls and authentication mechanisms;
+    (c) Secure disposal of Confidential Information when no longer needed;
+    (d) Employee training on confidentiality obligations.
+
+3. TERM AND DURATION OF OBLIGATIONS
+
+3.1 Term: This Agreement shall remain in effect for a period of two (2) years from the Effective Date, unless earlier terminated by either Party upon thirty (30) days' written notice.
+
+3.2 Survival: The confidentiality obligations under this Agreement shall survive termination and continue for a period of five (5) years from the date of disclosure of the relevant Confidential Information, or indefinitely in the case of trade secrets (for so long as they remain trade secrets).
+
+4. RETURN AND DESTRUCTION
+
+4.1 Upon termination of this Agreement or upon written request by the Discloser, the Recipient shall promptly:
+    (a) Return all tangible materials containing Confidential Information;
+    (b) Permanently delete all electronic copies of Confidential Information;
+    (c) Certify in writing that all Confidential Information has been returned or destroyed.
+
+4.2 The Recipient may retain one archival copy solely for legal compliance purposes, provided that such copy remains subject to the confidentiality obligations of this Agreement.
+
+5. INTELLECTUAL PROPERTY
+
+5.1 No License: Nothing in this Agreement grants the Recipient any license, right, or interest in the Discloser's intellectual property, patents, copyrights, trademarks, or trade secrets.
+
+5.2 Ownership: All Confidential Information remains the exclusive property of the Discloser. No disclosure hereunder transfers any title or ownership rights.
+
+6. REMEDIES
+
+6.1 Irreparable Harm: The Parties acknowledge that unauthorized disclosure of Confidential Information may cause irreparable harm that cannot be adequately compensated by monetary damages alone.
+
+6.2 Injunctive Relief: The Discloser shall be entitled to seek immediate injunctive or equitable relief in any court of competent jurisdiction, without the necessity of posting a bond, in addition to any other remedies available at law or in equity.
+
+6.3 Indemnification: The Recipient shall indemnify and hold harmless the Discloser from all losses, damages, costs, and expenses (including reasonable attorneys' fees) arising from any breach of this Agreement by the Recipient or its authorized personnel.
+
+7. GOVERNING LAW AND JURISDICTION
+
+7.1 Governing Law: This Agreement shall be governed by and construed in accordance with the laws of India, without regard to conflict of laws principles.
+
+7.2 Dispute Resolution: Any dispute arising out of this Agreement shall first be attempted to be resolved through good faith negotiations between senior executives of both Parties for a period of thirty (30) days. If unresolved, the dispute shall be submitted to binding arbitration under the SIAC (Singapore International Arbitration Centre) Rules, with the seat of arbitration in Singapore and proceedings conducted in English.
+
+8. GENERAL PROVISIONS
+
+8.1 Entire Agreement: This Agreement constitutes the entire understanding between the Parties regarding confidentiality and supersedes all prior discussions and agreements.
+
+8.2 Amendment: Amendments must be in writing and signed by authorized representatives of both Parties.
+
+8.3 Severability: If any provision is held unenforceable, the remaining provisions continue in full force.
+
+8.4 No Waiver: Failure to enforce any right does not constitute a waiver of that right.
+
+8.5 Assignment: Neither Party may assign this Agreement without prior written consent, except in connection with a merger, acquisition, or sale of substantially all assets.
+
+8.6 Counterparts: This Agreement may be executed in counterparts, including electronic signatures, each of which shall be deemed an original.
+
+8.7 No Obligation: Nothing in this Agreement obligates either Party to enter into any further agreement, transaction, or business relationship. Either Party may terminate discussions at any time.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+QUANTUM INNOVATIONS PVT. LTD.
+_______________________________
+Name: Dr. Kavitha Ramanathan
+Title: Chief Executive Officer
+Date: April 10, 2025
+
+NEXGEN SYSTEMS LLC
+_______________________________
+Name: Michael Torres
+Title: Vice President, Business Development
+Date: April 10, 2025
