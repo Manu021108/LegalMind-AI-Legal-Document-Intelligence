@@ -203,4 +203,4 @@ All settings are managed via `.env` and `config.py`:
 
 This project is released under the [MIT License](LICENSE).
 
-Copyright (c) 2026 Manish Pandey.
+Copyright (c) 2026 Manish Kumar Sahu.
